@@ -1,0 +1,7 @@
+*.[oda]
+.scon*
+config.log
+gmon.out
+cmdline.cc
+cmdline.h
+papilog

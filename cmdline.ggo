@@ -1,0 +1,14 @@
+package "papilog"
+version "0.1"
+#usage ""
+description "PAPI-based performance counter logger."
+
+args "-c cc --show-required -C --default-optional -l"
+
+option "verbose" v "Verbosity. Repeat for more verbose." multiple
+
+option "pid" p "PID of process to monitor." int required
+option "event" e "PAPI event to monitor.  May be repeated." string multiple
+option "interval" i "Interval for counter reporting." int default="5"
+option "reset" r "Reset counters after each report."
+option "timestamp" t "Timestamp reports."

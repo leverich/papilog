@@ -1,0 +1,16 @@
+papilog 0.1
+
+Usage: papilog -pINT|--pid=INT [-h|--help] [-V|--version] [-v|--verbose]
+         [-eSTRING|--event=STRING] [-iINT|--interval=INT] [-r|--reset]
+         [-t|--timestamp]
+
+PAPI-based performance counter logger.
+
+  -h, --help          Print help and exit
+  -V, --version       Print version and exit
+  -v, --verbose       Verbosity. Repeat for more verbose.
+  -p, --pid=INT       PID of process to monitor. (mandatory)
+  -e, --event=STRING  PAPI event to monitor.  May be repeated.
+  -i, --interval=INT  Interval for counter reporting.  (default=`5')
+  -r, --reset         Reset counters after each report.
+  -t, --timestamp     Timestamp reports.
